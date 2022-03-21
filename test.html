@@ -6,139 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="teststyle.css">
-    <script src="javascript.js"></script>
-    <script>
-        let flag;
-        function selection(x){
-            if(flag==1){
-                alert("you can choose only one option");
-                return;
-            }
-            
-            if(x==9){
-
-                btn=document.getElementById("9th");
-                console.log("here");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-                if(btn.style.backgroundColor == "#5f6777"){
-                    btn.style.backgroundColor = "#5f6777";
-                    console.log("toggle");
-                }
-                flag=1;
-
-            }
-            else if(x==10){
-                btn=document.getElementById("10th");
-                console.log("here");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-                if(btn.style.backgroundColor == "#5f6777"){
-                    btn.style.backgroundColor = "#5f6777";
-                    console.log("toggle");
-                }
-                flag=1;
-            }
-            else if(x==11){
-                btn=document.getElementById("11th");
-                console.log("here");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-                if(btn.style.backgroundColor == "#5f6777"){
-                    btn.style.backgroundColor = "#5f6777";
-                    console.log("toggle");
-                }
-                flag=1;
-            }
-            else if(x==12){
-                btn=document.getElementById("12th");
-                console.log("here");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-                if(btn.style.backgroundColor == "#5f6777"){
-                    btn.style.backgroundColor = "#5f6777";
-                    console.log("toggle");
-                }
-                flag=1;
-            }
-        }
-
-        function selectionsubject(x){
-            if(x==1){
-                btn=document.getElementById("maths");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==2){
-                btn=document.getElementById("physics");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==3){
-                btn=document.getElementById("chemistry");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==4){
-                btn=document.getElementById("history");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==5){
-                btn=document.getElementById("biology");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==6){
-                btn=document.getElementById("english");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            
-            else if(x==7){
-                btn=document.getElementById("economics");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==8){
-                btn=document.getElementById("geography");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-            else if(x==9){
-                btn=document.getElementById("civics");
-                if(btn.style.backgroundColor != "#0d637e"){
-                    btn.style.backgroundColor = "#0d637e";
-                    console.log("changed");
-                }
-            }
-
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -209,32 +76,32 @@
             <h1>How would you explain your mind works</h1>
             <div class="options2">
                 <div>
-                    <input type="button" id="logical" onclick="selectionmindset(1)" value="Logical">
+                    <input type="button" id="Logical" onclick="selectionmindset(1)" value="Logical">
                 </div>
                 <div>
-                    <input type="button" id="analytical" onclick="selectionmindset(2)" value="Analytical">
+                    <input type="button" id="Analytical" onclick="selectionmindset(2)" value="Analytical">
                 </div>
 
                 <div>
-                    <input type="button" id="stem" onclick="selectionmindset(3)" value="STEM">
+                    <input type="button" id="STEM" onclick="selectionmindset(3)" value="STEM">
                 </div>
                 <div>
-                    <input type="button" id="disciplined" onclick="selectionmindset(4)" value="Disciplined">
+                    <input type="button" id="Disciplined" onclick="selectionmindset(4)" value="Disciplined">
                 </div>
                 <div>
-                    <input type="button" id="physical" onclick="selectionmindset(5)" value="Physical">
+                    <input type="button" id="Physical" onclick="selectionmindset(5)" value="Physical">
                 </div>
                 <div>
-                    <input type="button" id="reasoning" onclick="selectionmindset(6)" value="Reasoning">
+                    <input type="button" id="Reasoning" onclick="selectionmindset(6)" value="Reasoning">
                 </div>
                 <div>
-                    <input type="button" id="linguistic" onclick="selectionmindset(7)" value="Linguistic">
+                    <input type="button" id="Linguistic" onclick="selectionmindset(7)" value="Linguistic">
                 </div>
                 <div>
-                    <input type="button" id="organisational" onclick="selectionmindset(8)" value="Organisational">
+                    <input type="button" id="Organisational" onclick="selectionmindset(8)" value="Organisational">
                 </div>
                 <div>
-                    <input type="button" id="learning" onclick="selectionmindset(9)" value="Learning">
+                    <input type="button" id="Learning" onclick="selectionmindset(9)" value="Learning">
                 </div>
                 
                 
@@ -246,32 +113,32 @@
             <h1>What are your interests</h1>
             <div class="options2">
                 <div>
-                    <input type="button" id="reading" onclick="selectioninterests(1)" value="Reading">
+                    <input type="button" id="Reading" onclick="selectioninterests(1)" value="Reading">
                 </div>
                 <div>
-                    <input type="button" id="travel" onclick="selectioninterests(2)" value="Travel">
+                    <input type="button" id="Travel" onclick="selectioninterests(2)" value="Travel">
                 </div>
 
                 <div>
-                    <input type="button" id="music" onclick="selectioninterests(3)" value="Music">
+                    <input type="button" id="Music" onclick="selectioninterests(3)" value="Music">
                 </div>
                 <div>
-                    <input type="button" id="art" onclick="selectioninterests(4)" value="Art">
+                    <input type="button" id="Art" onclick="selectioninterests(4)" value="Art">
                 </div>
                 <div>
-                    <input type="button" id="history2" onclick="selectioninterests(5)" value="History">
+                    <input type="button" id="History2" onclick="selectioninterests(5)" value="History">
                 </div>
                 <div>
-                    <input type="button" id="space" onclick="selectioninterests(6)" value="Space">
+                    <input type="button" id="Space" onclick="selectioninterests(6)" value="Space">
                 </div>
                 <div>
-                    <input type="button" id="sports" onclick="selectioninterests(7)" value="Sports">
+                    <input type="button" id="Sports" onclick="selectioninterests(7)" value="Sports">
                 </div>
                 <div>
-                    <input type="button" id="movies" onclick="selectioninterests(8)" value="Movies">
+                    <input type="button" id="Movies" onclick="selectioninterests(8)" value="Movies">
                 </div>
                 <div>
-                    <input type="button" id="coding" onclick="selectioninterests(9)" value="Coding">
+                    <input type="button" id="Coding" onclick="selectioninterests(9)" value="Coding">
                 </div>
                 
         </div>
@@ -285,6 +152,7 @@
         
         
     </div>
-    
+</div>
+<script src="javascript.js"></script>
 </body>
 </html>
