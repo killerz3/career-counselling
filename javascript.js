@@ -9,10 +9,10 @@ btn_1=document.getElementById("9th");
 btn_2=document.getElementById("10th");
 btn_3=document.getElementById("11th");
 btn_4=document.getElementById("12th");
-btn_1.style.backgroundColor= "#5f6777";
-btn_2.style.backgroundColor= "#5f6777";
-btn_3.style.backgroundColor= "#5f6777";
-btn_4.style.backgroundColor= "#5f6777";
+btn_1.style.backgroundColor= "#639FAB";
+btn_2.style.backgroundColor= "#639FAB";
+btn_3.style.backgroundColor= "#639FAB";
+btn_4.style.backgroundColor= "#639FAB";
 
 
 }
@@ -32,23 +32,23 @@ function selection(x){
 
             btn=document.getElementById("9th");
             toggle_color();
-            btn.style.backgroundColor= "#0d637e";
+            btn.style.backgroundColor= "#BBCDE5";
 
         }
         else if(class_current=="10th"){
             btn=document.getElementById("10th");
             toggle_color();
-            btn.style.backgroundColor= "#0d637e";
+            btn.style.backgroundColor= "#BBCDE5";
         }
         else if(class_current=="11th"){
             btn=document.getElementById("11th");
             toggle_color();
-            btn.style.backgroundColor= "#0d637e";
+            btn.style.backgroundColor= "#BBCDE5";
         }
         else if(class_current=="12th"){
             btn=document.getElementById("12th");
             toggle_color();
-            btn.style.backgroundColor= "#0d637e";
+            btn.style.backgroundColor= "#BBCDE5";
         }
         console.log(class_current);
 }
@@ -65,7 +65,7 @@ function selectionsubject(x){
             console.log("maths pushed");
         }
         
-        subjects.includes("maths")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("maths")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects);  
     }
     else if(x==2){
@@ -79,7 +79,7 @@ function selectionsubject(x){
             subjects.push("physics");
         }
         
-        subjects.includes("physics")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("physics")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects);  
     }
     else if(x==3){
@@ -92,7 +92,7 @@ function selectionsubject(x){
             subjects.push("chemistry");
         }
         
-        subjects.includes("chemistry")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("chemistry")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     else if(x==4){
@@ -105,7 +105,7 @@ function selectionsubject(x){
             subjects.push("history");
         }
         
-        subjects.includes("history")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("history")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     else if(x==5){
@@ -118,7 +118,7 @@ function selectionsubject(x){
             subjects.push("biology");
         }
         
-        subjects.includes("biology")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("biology")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     else if(x==6){
@@ -131,7 +131,7 @@ function selectionsubject(x){
             subjects.push("english");
         }
         
-        subjects.includes("english")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("english")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     
@@ -145,7 +145,7 @@ function selectionsubject(x){
             subjects.push("economics");
         }
         
-        subjects.includes("economics")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("economics")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     else if(x==8){
@@ -158,7 +158,7 @@ function selectionsubject(x){
             subjects.push("geography");
         }
         
-        subjects.includes("geography")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("geography")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
     else if(x==9){
@@ -171,7 +171,7 @@ function selectionsubject(x){
             subjects.push("civics");
         }
         
-        subjects.includes("civics")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        subjects.includes("civics")?btn.style.backgroundColor="#ffcbcb":btn.style.backgroundColor="rgb(190,152,152)"
         console.log(subjects); 
     }
 
@@ -190,7 +190,7 @@ function selectionmindset(x) {
             console.log("Logical pushed");
         }
         
-        mindsets.includes("Logical")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Logical")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets);  
     }
     else if(x==2){
@@ -204,7 +204,7 @@ function selectionmindset(x) {
             mindsets.push("Analytical");
         }
         
-        mindsets.includes("Analytical")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Analytical")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets);  
     }
     else if(x==3){
@@ -217,7 +217,7 @@ function selectionmindset(x) {
             mindsets.push("STEM");
         }
         
-        mindsets.includes("STEM")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("STEM")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     else if(x==4){
@@ -230,7 +230,7 @@ function selectionmindset(x) {
             mindsets.push("Disciplined");
         }
         
-        mindsets.includes("Disciplined")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Disciplined")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     else if(x==5){
@@ -243,7 +243,7 @@ function selectionmindset(x) {
             mindsets.push("Physical");
         }
         
-        mindsets.includes("Physical")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Physical")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     else if(x==6){
@@ -256,7 +256,7 @@ function selectionmindset(x) {
             mindsets.push("Reasoning");
         }
         
-        mindsets.includes("Reasoning")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Reasoning")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     
@@ -270,7 +270,7 @@ function selectionmindset(x) {
             mindsets.push("Linguistic");
         }
         
-        mindsets.includes("Linguistic")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Linguistic")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     else if(x==8){
@@ -283,7 +283,7 @@ function selectionmindset(x) {
             mindsets.push("Organisational");
         }
         
-        mindsets.includes("Organisational")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Organisational")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
     else if(x==9){
@@ -296,7 +296,7 @@ function selectionmindset(x) {
             mindsets.push("Learning");
         }
         
-        mindsets.includes("Learning")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        mindsets.includes("Learning")?btn.style.backgroundColor="#cbffd2":btn.style.backgroundColor="rgb(152,190,152)"
         console.log(mindsets); 
     }
 }
@@ -313,7 +313,7 @@ function selectioninterests(x){
             console.log("Reading pushed");
         }
         
-        interests.includes("Reading")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Reading")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests);  
     }
     else if(x==2){
@@ -327,7 +327,7 @@ function selectioninterests(x){
             interests.push("Travel");
         }
         
-        interests.includes("Travel")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Travel")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests);  
     }
     else if(x==3){
@@ -340,7 +340,7 @@ function selectioninterests(x){
             interests.push("Music");
         }
         
-        interests.includes("Music")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Music")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     else if(x==4){
@@ -353,7 +353,7 @@ function selectioninterests(x){
             interests.push("Art");
         }
         
-        interests.includes("Art")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Art")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     else if(x==5){
@@ -366,7 +366,7 @@ function selectioninterests(x){
             interests.push("History");
         }
         
-        interests.includes("History")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("History")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     else if(x==6){
@@ -379,7 +379,7 @@ function selectioninterests(x){
             interests.push("Space");
         }
         
-        interests.includes("Space")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Space")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     
@@ -393,7 +393,7 @@ function selectioninterests(x){
             interests.push("Sports");
         }
         
-        interests.includes("Sports")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Sports")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     else if(x==8){
@@ -406,7 +406,7 @@ function selectioninterests(x){
             interests.push("Movies");
         }
         
-        interests.includes("Movies")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Movies")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
     else if(x==9){
@@ -419,7 +419,7 @@ function selectioninterests(x){
             interests.push("Coding");
         }
         
-        interests.includes("Coding")?btn.style.backgroundColor="#0d637e":btn.style.backgroundColor="#5f6777"
+        interests.includes("Coding")?btn.style.backgroundColor="#f6ffcb":btn.style.backgroundColor="rgb(184,190,152)"
         console.log(interests); 
     }
 

@@ -61,7 +61,7 @@ header{
     
     text-align: center;
     padding: 30px;
-    background-color:#3f4653 ;
+    
     border-radius: 5px;
     margin-top: 20px;
     width: 700px;
@@ -71,7 +71,7 @@ header{
 .ques2,.ques3,.ques4{
     text-align: center;
     padding: 30px;
-    background-color:#3f4653 ;
+    
     border-radius: 5px;
     margin-top: 20px;
     width: 700px;
@@ -91,7 +91,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     width: 502px;
     height: 100px;
-    background-color: #5f6777;
+    background-color: #639FAB;
     border: none;
     font-size: 40px;
     transition: all 0.2s ease 0s;
@@ -99,7 +99,7 @@ header{
 }
 .options input:hover{
     cursor: pointer;
-    background-color: #639FAB;
+    background-color: #BBCDE5;
 }
 .options2{
     display: flex;
@@ -117,13 +117,66 @@ header{
     border: none;
     border-radius: 5px;
     transition: all 0.2s ease 0s;
-    background-color: #5f6777;
+    background-color: rgb(190,152,152);
 }
 .options2 input:hover{
-    background-color: #639FAB;
+    background-color: #ffcbcb;
     cursor: pointer;
 }
+
 .options2 div{
+    padding: 5px;
+}
+.options3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 86px;
+
+}
+.options3 input{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease 0s;
+    background-color: rgb(152,190,152);
+}
+.options3 input:hover{
+    background-color: #cbffd2;
+    cursor: pointer;
+}
+
+.options3 div{
+    padding: 5px;
+}
+.options4{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 86px;
+
+}
+.options4 input{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease 0s;
+    background-color: rgb(184,190,152);
+}
+.options4 input:hover{
+    background-color: #f6ffcb;
+    cursor: pointer;
+}
+
+.options4 div{
     padding: 5px;
 }
 .buttons{
