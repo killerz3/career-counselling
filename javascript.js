@@ -425,10 +425,20 @@ function selectioninterests(x){
 
 }
 
+
 function returnData() {
     let endUrl = careerURl(class_current, subjects, mindsets, interests);
     let baseUrl = "http://careerguru.pythonanywhere.com/api?";
     
-    fetch(baseUrl + endUrl).then(response => response.text()).then(data=>console.log(data));
+    fetch(baseUrl + endUrl).then(response => response.text()).then(data=>{
+        console.log(data);
+        const header="Your career options are:";
+        document.querySelector("#answer").style.backgroundColor="#3f444e";
+        document.querySelector("#answer").innerHTML=header;
+        document.querySelector("#answer").insertAdjacentHTML("beforeend",data);
+        document.getElementById("answer").scrollIntoView({behavior:"smooth"});
+        document.getElementById("button").className = 'show';
+        
+    });
     
 }
