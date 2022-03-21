@@ -424,3 +424,11 @@ function selectioninterests(x){
     }
 
 }
+
+function returnData() {
+    let endUrl = careerURl(class_current, subjects, mindsets, interests);
+    let baseUrl = "http://careerguru.pythonanywhere.com/api?";
+    
+    fetch(baseUrl + endUrl).then(response => response.text()).then(data=>console.log(data));
+    
+}
