@@ -32,6 +32,7 @@ header{
     
 }
 .container{
+    margin: auto;
     padding: 30px;
 }
 .navbar{
@@ -57,35 +58,29 @@ header{
     background-color:#0d637e ;
     
 }
-.ques1{
-    
+
+.ques1,.ques2,.ques3,.ques4{
     text-align: center;
     padding: 30px;
-    
-    border-radius: 5px;
-    margin-top: 20px;
-    width: 700px;
-    height: 500px;
-    margin-left: 21%;
-}
-.ques2,.ques3,.ques4{
-    text-align: center;
-    padding: 30px;
-    
+    color:#BBCDE5;
+    font-weight:100;
     border-radius: 5px;
     margin-top: 20px;
     width: 700px;
     height: 570px;
-    margin-left: 21%;
+    /* margin-left: 21%; */
 }
 
 .options{
     margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .options li{
-    margin: 10px;
-    
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .options input{
     font-family: 'Montserrat', sans-serif;
@@ -96,16 +91,22 @@ header{
     font-size: 40px;
     transition: all 0.2s ease 0s;
     border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .options input:hover{
     cursor: pointer;
+    font-size: 50px;
+
     background-color: #BBCDE5;
 }
-.options2{
+.options2,.options3,.options4{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    margin-left: 86px;
+    width: 500px;
+    /* background-color: #BBCDE5;/ */
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .options2 input{
@@ -121,19 +122,15 @@ header{
 }
 .options2 input:hover{
     background-color: #ffcbcb;
+    font-size: 28px;
+
     cursor: pointer;
 }
 
 .options2 div{
     padding: 5px;
 }
-.options3{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-left: 86px;
 
-}
 .options3 input{
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
@@ -147,19 +144,15 @@ header{
 }
 .options3 input:hover{
     background-color: #cbffd2;
+    font-size: 28px;
+
     cursor: pointer;
 }
 
 .options3 div{
     padding: 5px;
 }
-.options4{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-left: 86px;
 
-}
 .options4 input{
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
@@ -173,6 +166,7 @@ header{
 }
 .options4 input:hover{
     background-color: #f6ffcb;
+    font-size: 28px;
     cursor: pointer;
 }
 
@@ -180,9 +174,14 @@ header{
     padding: 5px;
 }
 .buttons{
-    margin-top: 60px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+
 }
+
 .buttons input{
     background-color: #639FAB;
     transition: all 0.2s ease 0s;
@@ -205,6 +204,18 @@ header{
     padding: 23px;
     margin-top: 110px;
     
+}
+.answerClass{
+    text-align: center;
+    padding: 30px;
+    color:#BBCDE5;
+    font-weight:100;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 700px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 .answercontainer{
     font-size: 30px;

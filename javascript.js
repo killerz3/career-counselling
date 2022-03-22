@@ -432,10 +432,13 @@ function returnData() {
     
     fetch(baseUrl + endUrl).then(response => response.text()).then(data=>{
         console.log(data);
-        const header="Your career options are:";
+        const questions = document.querySelector(".ques-container");
+        questions.style.display = "none";
+        const header = "Your career options are:";
+        
         document.querySelector("#answer").style.backgroundColor="#3f444e";
         document.querySelector("#answer").innerHTML=header;
-        document.querySelector("#answer").insertAdjacentHTML("beforeend",data);
+        document.querySelector(".answerClass").textContent=header+"\n"+data;
         document.getElementById("answer").scrollIntoView({behavior:"smooth"});
         document.getElementById("button").className = 'show';
         
