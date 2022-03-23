@@ -424,7 +424,20 @@ function selectioninterests(x){
     }
 
 }
-
+function stringToHtml(str){
+    let txt="";
+    for(let i =0;i<str.length;i++ ){
+      if (str[i]=="\n"){
+        txt+="<br>"
+      }
+      else{
+          txt+=str[i]
+      }
+    } 
+      console.log(txt);
+    return txt;
+    }
+    
 
 function returnData() {
     let endUrl = careerURl(class_current, subjects, mindsets, interests);
@@ -435,10 +448,29 @@ function returnData() {
         const questions = document.querySelector(".ques-container");
         questions.style.display = "none";
         const header = "Your career options are:";
-        
+        let finalData = stringToHtml(data);
         document.querySelector("#answer").style.backgroundColor="#3f444e";
         document.querySelector("#answer").innerHTML=header;
-        document.querySelector(".answerClass").textContent=header+"\n"+data;
+        document.querySelector(".answerClass").innerHTML=header+"<br>"+finalData;
+        document.getElementById("answer").scrollIntoView({behavior:"smooth"});
+        document.getElementById("button").className = 'show';
+        
+    });
+    
+}
+function returnAnswer(question) {//call this with the question from the form on the screen
+    let endUrl = questionURl(class_current, subjects, mindsets, interests,question);
+    let baseUrl = "http://careerguru.pythonanywhere.com/api/question?";
+    
+    fetch(baseUrl + endUrl).then(response => response.text()).then(data=>{//data again will be fetched simillarly just display it 
+        console.log(data);
+        const questions = document.querySelector(".ques-container");
+        questions.style.display = "none";
+        const header = "Your career options are:";
+        let finalData = stringToHtml(data);
+        document.querySelector("#answer").style.backgroundColor="#3f444e";
+        document.querySelector("#answer").innerHTML=header;
+        document.querySelector(".answerClass").innerHTML=header+"<br>"+finalData;
         document.getElementById("answer").scrollIntoView({behavior:"smooth"});
         document.getElementById("button").className = 'show';
         
