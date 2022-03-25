@@ -192,10 +192,14 @@ header{
     height: 60px;
     border-radius: 5px;
     border: none;
+    margin-right:20px;
 }
 .buttons input:hover{
     background-color:#0d637e ;
     cursor: pointer;
+}
+.button{
+    margin-right: 20px;
 }
 #answer{
     
@@ -206,19 +210,20 @@ header{
     
 }
 .answerClass{
-    text-align: center;
+    text-align: left;
     padding: 30px;
     color:#BBCDE5;
     font-weight:100;
     border-radius: 5px;
     margin-top: 20px;
-    width: 700px;
-    height: 570px;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto; 
 }
 .answercontainer{
     font-size: 30px;
+    height: auto;
     padding: 20px;
 }
 .hidden{
@@ -234,7 +239,9 @@ header{
     height: 60px;
     border-radius: 5px;
     border: none;
+    margin-right: 20px;
 }
+
 .show:hover{
     background-color:#0d637e ;
     cursor: pointer;

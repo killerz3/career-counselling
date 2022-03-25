@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #2B303A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+li,a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav_bar{
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 40px;
+    padding-right: 70px;
+    background-color: #639FAB;
+    border-radius: 5px;
+    
+}
+.container{
+    margin: auto;
+    padding: 30px;
+}
+.navbar{
+    list-style: none;
+}
+.nav_bar h2{
+    font-size: 30px;
+}
+.navbar li {
+    display: inline-block;
+    
+    padding: 0px 20px;
+}
+.navbar li a{
+    color: #0a0a0a;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.navbar li a:hover{
+    background-color:#0d637e ;
+    
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.buttons input{
+    background-color: #639FAB;
+    transition: all 0.2s ease 0s;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    margin-right:20px;
+}
+.buttons input:hover{
+    background-color:#0d637e ;
+    cursor: pointer;
+}
+
+.text-field[type=text]{
+    width:100%;
+    padding:5px 10px 5px 10px;
+    margin-left: auto;
+    margin-left: auto;
+}
+.answerClass{
+    text-align: left;
+    padding: 30px;
+    color:#BBCDE5;
+    font-weight:100;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.answercontainer{
+    font-size: 30px;
+    height: auto;
+    padding: 20px;
+}
