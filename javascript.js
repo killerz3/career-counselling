@@ -442,7 +442,7 @@ function stringToHtml(str) {
 function returnData() {
     let endUrl = careerURl(class_current, subjects, mindsets, interests);
     let baseUrl = "http://careerguru.pythonanywhere.com/api?";
-
+    
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {
         console.log(data);
         const questions = document.querySelector(".ques-container");
@@ -471,6 +471,7 @@ function returnAnswer() {//call this with the question from the form on the scre
     let question=getQues();  
     let endUrl = questionURl(class_current, subjects, mindsets, interests, question);
     let baseUrl = "http://careerguru.pythonanywhere.com/api/question?";
+
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {//data again will be fetched simillarly just display it 
         console.log(data);
         
