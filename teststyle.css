@@ -31,6 +31,7 @@ header{
     border-radius: 5px;
     
 }
+
 .container{
     margin: auto;
     padding: 30px;
@@ -40,6 +41,20 @@ header{
 }
 .nav_bar h2{
     font-size: 30px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar img{
+    width: 60px;
+    height: 60px;
+}
+.image{
+    padding-right: 43px;
+}
+.heading{
+    padding-top: 10px;
 }
 .navbar li {
     display: inline-block;

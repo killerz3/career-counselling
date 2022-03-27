@@ -30,6 +30,20 @@ header{
     border-radius: 5px;
     
 }
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar img{
+    width: 60px;
+    height: 60px;
+}
+.image{
+    padding-right: 43px;
+}
+.heading{
+    padding-top: 10px;
+}
 
 .container{
     padding: 30px;
