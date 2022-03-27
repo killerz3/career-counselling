@@ -444,7 +444,7 @@ function returnData() {
     questions.style.display = "none";
     document.querySelector(".answerClass").innerHTML = '<div class="load"><div class="load-one"></div><div class="load-two"></div><div class="load-three"></div></div>';
     let endUrl = careerURl(class_current, subjects, mindsets, interests);
-    let baseUrl = "http://careerguru.pythonanywhere.com/api?";
+    let baseUrl = "https://careerguru.pythonanywhere.com/api?";
     
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {
         console.log(data);
@@ -473,7 +473,7 @@ async function returnAnswer() {//call this with the question from the form on th
 
     let question=getQues();  
     let endUrl = questionURl(class_current, subjects, mindsets, interests, question);
-    let baseUrl = "http://careerguru.pythonanywhere.com/api/question?";
+    let baseUrl = "https://careerguru.pythonanywhere.com/api/question?";
 
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {//data again will be fetched simillarly just display it 
         console.log(data);
