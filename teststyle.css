@@ -256,9 +256,7 @@ header{
       justify-content: center;
       align-items: center;
   }
-  .hide{
-      display: none;
-  }
+  
   .load div {
       width: 25px;
       height: 25px;
