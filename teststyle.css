@@ -97,7 +97,7 @@ header{
 .options input:hover{
     cursor: pointer;
     font-size: 50px;
-
+    height: 105px;
     background-color: #BBCDE5;
 }
 .options2,.options3,.options4{
@@ -201,19 +201,15 @@ header{
 .button{
     margin-right: 20px;
 }
-#answer{
-    
-    border-radius: 5px;
-    font-size: 30px;
-    padding: 23px;
-    margin-top: 110px;
-    
-}
+
 .answerClass{
+    /* background-color:#3f444e; */
+    font-size: 32px;
     text-align: left;
     padding: 30px;
     color:#BBCDE5;
     font-weight:100;
+    padding: 30px;
     border-radius: 5px;
     margin-top: 20px;
     width: auto;

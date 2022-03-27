@@ -440,19 +440,20 @@ function stringToHtml(str) {
 
 
 function returnData() {
+    const questions = document.querySelector(".ques-container");
+    questions.style.display = "none";
+    document.querySelector(".answerClass").innerHTML = '<div class="load"><div class="load-one"></div><div class="load-two"></div><div class="load-three"></div></div>';
     let endUrl = careerURl(class_current, subjects, mindsets, interests);
     let baseUrl = "http://careerguru.pythonanywhere.com/api?";
     
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {
         console.log(data);
-        const questions = document.querySelector(".ques-container");
-        questions.style.display = "none";
         const header = "Your career options are:";
         let finalData = stringToHtml(data);
-        document.querySelector("#answer").style.backgroundColor = "#3f444e";
-        document.querySelector("#answer").innerHTML = header;
+        document.querySelector(".answerClass").style.backgroundColor = "#3f444e";
+        console.log(finalData);
         document.querySelector(".answerClass").innerHTML = header + "<br>" + finalData;
-        document.getElementById("answer").scrollIntoView({ behavior: "smooth" });
+        document.querySelector(".answerClass").scrollIntoView({ behavior: "smooth" });
         document.getElementById("button").className = 'show';
         document.getElementById("faq").className = 'show';
 
@@ -468,19 +469,18 @@ function getQues() {
 }
 
 async function returnAnswer() {//call this with the question from the form on the screen
+    document.querySelector(".answerClass").innerHTML = '<div class="load"><div class="load-one"></div><div class="load-two"></div><div class="load-three"></div></div>';
+
     let question=getQues();  
     let endUrl = questionURl(class_current, subjects, mindsets, interests, question);
     let baseUrl = "http://careerguru.pythonanywhere.com/api/question?";
 
     fetch(baseUrl + endUrl).then(response => response.text()).then(data => {//data again will be fetched simillarly just display it 
         console.log(data);
-        
-        
         let finalData = stringToHtml(data);
-        document.querySelector("#answer").style.backgroundColor = "#3f444e";
-        console.log(question);
+        // document.querySelector(".answerClass").style.backgroundColor = "#3f444e";
         document.querySelector(".answerClass").innerHTML = finalData;
-        document.getElementById("answer").scrollIntoView({ behavior: "smooth" });
+        document.querySelector(".answerClass").scrollIntoView({ behavior: "smooth" });
         document.getElementById("button").className = 'show';
 
     });
