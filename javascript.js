@@ -467,7 +467,7 @@ function getQues() {
     return question;
 }
 
-function returnAnswer() {//call this with the question from the form on the screen
+async function returnAnswer() {//call this with the question from the form on the screen
     let question=getQues();  
     let endUrl = questionURl(class_current, subjects, mindsets, interests, question);
     let baseUrl = "http://careerguru.pythonanywhere.com/api/question?";
